@@ -1,7 +1,4 @@
-for i in {1..100}
-do
-    cat > .github/workflows/pull-${i}.yml <<EOL
-name: Pull-Image-${i}
+name: Pull-Image-29
 on:
   push
 
@@ -11,6 +8,3 @@ jobs:
     steps:
       - name: pull image
         run: docker pull ghcr.io/panchalshubham/busybox
-EOL
-done
-
