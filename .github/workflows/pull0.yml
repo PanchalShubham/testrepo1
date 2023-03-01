@@ -1,0 +1,10 @@
+name: Pull-0
+on:
+  push
+
+jobs:
+  job1:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: pull image
+        run: docker pull ghcr.io/panchalshubham/busybox
