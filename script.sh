@@ -3,7 +3,8 @@ do
     cat > .github/workflows/pull-${i}.yml <<EOL
 name: Pull-Image-${i}
 on:
-  push
+  push:
+  pull_request:
 
 jobs:
   job1:

@@ -1,6 +1,7 @@
 name: Pull-Image-6
 on:
-  push
+  push:
+  pull_request:
 
 jobs:
   job1:
